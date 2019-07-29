@@ -1,0 +1,8 @@
+User-Agent: *
+Disallow: /vendor/
+Disallow: /css/
+Disallow: /img/
+Disallow: /js/
+Disallow: /webfonts/
+Disallow: /journalist/
+Disallow: /butchers/

@@ -1,0 +1,87 @@
+// Styling for the navbar
+#mainNav 
+  padding-top: 1rem
+  padding-bottom: 1rem
+  @include heading-font;
+  .navbar-brand 
+    color: $white
+  .navbar-nav 
+    margin-top: 1rem
+    letter-spacing: 0.0625rem
+    li.nav-item
+      .dropdown-menu
+       background: $secondary
+       border: 0px
+      a.nav-link 
+        color: $white
+        &:hover 
+          color: $primary
+        &:active,
+        &:focus 
+          color: $white
+        &.active 
+          color: $primary
+      a.dropdown-item 
+        color: $white
+        &:hover 
+          color: $primary
+          background: $secondary
+        &:active,
+        &:focus 
+          color: $white
+        &.active 
+          color: $primary
+
+    li.nav-item >.dropdown-menu>a.dropdown-item.active
+      background: $secondary
+
+  .navbar-toggler 
+    font-size: 80%
+    padding: 0.8rem
+  
+@media (min-width:992px) 
+  #mainNav 
+    padding-top: 1.5rem
+    padding-bottom: 1.5rem
+    box-shadow: 0px 0px 0px $gray-900
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s, box-shadow 0.3s
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s, box-shadow 0.3s
+    transition: padding-top 0.3s, padding-bottom 0.3s, box-shadow 0.3s
+    .navbar-brand 
+      font-size: 2em
+      -webkit-transition: font-size 0.3s
+      -moz-transition: font-size 0.3s
+      transition: font-size 0.3s
+    li.nav-item
+      .dropdown-menu
+        border: 1px solid rgba($white,.15)
+
+      a.dropdown-item 
+    .navbar-nav 
+      margin-top: 0
+    
+    .navbar-nav > li.nav-item > a.nav-link.active, .navbar-nav > li.nav-item >.dropdown-menu>a.dropdown-item.active
+      color: $white
+      background: $primary
+      &:active,
+      &:focus,
+      &:hover 
+        color: $white
+        background: $primary
+
+    .navbar-nav > li.nav-item >.dropdown-menu>a.dropdown-item
+      &:hover
+        color: $primary
+        background: $secondary
+      &:focus
+        background: $secondary
+
+
+     
+      
+  #mainNav.navbar-shrink 
+    padding-top: 0.5rem
+    padding-bottom: 0.5rem
+    box-shadow: -1px 3px 4px $gray-900
+    .navbar-brand 
+      font-size: 1.5em

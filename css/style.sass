@@ -1,0 +1,307 @@
+body
+  background-color: #342538
+  position: relative
+
+.jumbotron
+  padding: 2rem, 4rem
+  background-image: url(../img/pic1.jpg)
+  size: cover
+  position: relative
+  \::after
+    content: " "
+    background-color: rgba(0, 0, 0, 0.35)
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: block
+    z-index: -1
+
+.overlay
+  position: relative
+  \::before
+    position: absolute
+    top: 0
+    left: 0
+    content: " "
+    width: 100%
+    height: 100%
+    display: block
+    z-index: 0
+    background-color: rgba(0, 0, 0, 0.5)
+
+.rounded-circle
+  border-radius: 50%
+  width: 100px
+  height: 100px
+  border: 1px solid #000000
+
+.row
+  display: flex
+  flex-wrap: wrap
+  margin-right: 0px
+  margin-left: 0px
+
+footer
+  height: 50px
+
+.bg-dark
+  background-color: #343a40 !important
+
+a.bg-dark
+  &:focus, &:hover
+    background-color: #1d2124 !important
+
+.text-light
+  color: #f8f9fa !important
+
+a.text-light
+  &:focus, &:hover
+    color: #dae0e5 !important
+
+.jumbo-title
+  color: #81569A !important
+  font-weight: 400
+  text-shadow: 2px 2px blue !important
+  z-index: 1
+
+@media (max-width: 768px)
+  .display-3
+    font-size: 3.5rem
+    line-height: 1.1
+
+@media (max-width: 576px)
+  .jumbo-text
+    font-size: 1rem !important
+
+.jumbo-text
+  font-size: 1.25rem
+  color: #D3D3D3
+  font-weight: 500
+  text-shadow: 2px 3px black
+  z-index: 1
+
+.price-section-title, .price-section
+  padding-top: 1.25rem
+  padding-bottom: 1.25rem
+
+.form-control:focus
+  color: #495057
+  background-color: #fff
+  border-color: #80bdff
+  border-width: 3px
+  outline: none
+  &.is-invalid
+    border-color: #dc3545
+
+.is-invalid:not(select)
+  color: #dc3545
+  font-size: 0.875rem
+
+select:focus
+  font-size: 0.875rem
+
+.btn-primary:hover
+  box-shadow: 4px 4px 5px 1px grey
+
+/*---------------------------------------
+ *               Cards                   |
+ *---------------------------------------
+
+.card
+  position: relative
+  display: flex
+  flex-direction: column
+  min-width: 0
+  word-wrap: break-word
+  background-color: #fff
+  background-clip: border-box
+  border: 1px solid rgba(0, 0, 0, 0.125)
+  border-radius: 0.25rem
+
+.features
+  border: 1px solid transparent
+  background-color: #343a40 !important
+  color: #f8f9fa !important
+
+a.features
+  &:focus, &:hover
+    color: #dae0e5 !important
+
+.card-body
+  flex: 1 1 auto
+  padding: 1.25rem
+
+.card-title
+  margin-bottom: 0.75rem
+
+.card-subtitle
+  margin-top: -0.375rem
+  margin-bottom: 0
+
+.card-text:last-child
+  margin-bottom: 0
+
+.card-link
+  &:hover
+    text-decoration: none
+  + .card-link
+    margin-left: 1.25rem
+
+.card > .list-group
+  &:first-child .list-group-item:first-child
+    border-top-left-radius: 0.25rem
+    border-top-right-radius: 0.25rem
+  &:last-child .list-group-item:last-child
+    border-bottom-right-radius: 0.25rem
+    border-bottom-left-radius: 0.25rem
+
+.list-group-item
+  position: relative
+  display: block
+  text-align: center
+  padding: 0.75rem 1.25rem
+  margin-bottom: -1px
+  background-color: rgba(67, 41, 73, 0.15)
+  border: 1px solid rgba(0, 0, 0, 0.125)
+
+#features
+  .list-group-item
+      background-color: #343a40 !important
+
+
+.card-header
+  padding: 0.75rem 1.25rem
+  margin-bottom: 0
+  background-color: rgba(0, 0, 0, 0.03)
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125)
+  &:first-child
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0
+
+.card-footer
+  padding: 0.75rem 1.25rem
+  background-color: rgba(0, 0, 0, 0.03)
+  border-top: 1px solid rgba(0, 0, 0, 0.125)
+  &:last-child
+    border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px)
+
+.card-header-tabs
+  margin-right: -0.625rem
+  margin-bottom: -0.75rem
+  margin-left: -0.625rem
+  border-bottom: 0
+
+.card-header-pills
+  margin-right: -0.625rem
+  margin-left: -0.625rem
+
+.card-img-overlay
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  padding: 1.25rem
+
+.card-img
+  width: 100%
+  border-radius: calc(0.25rem - 1px)
+
+.card-img-top
+  width: 100%
+  border-top-left-radius: calc(0.25rem - 1px)
+  border-top-right-radius: calc(0.25rem - 1px)
+
+.card-img-bottom
+  width: 100%
+  border-bottom-right-radius: calc(0.25rem - 1px)
+  border-bottom-left-radius: calc(0.25rem - 1px)
+
+@media (min-width: 992px)
+  .portfolio
+    -ms-flex: 0 0 25%
+        flex: 0 0 25%
+    max-width: 23%
+    
+
+@media (min-width: 756px) and (max-width: 992px)
+ .portfolio
+    -ms-flex: 0 0 50%
+        flex: 0 0 50%
+    max-width: 45%
+    margin-top: 15px
+
+@media (min-width: 576px) and (max-width: 768px)
+  .portfolio
+    -ms-flex: 0 0 100%
+        flex: 0 0 100%
+    max-width: 100%
+    margin-top: 15px
+
+@media (min-width: 576px)
+  .card-deck
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-flow: row wrap
+    flex-flow: row wrap
+    margin-right: -15px
+    margin-left: -15px
+    .card
+      display: -ms-flexbox
+      display: flex
+      -ms-flex: 1 0 0%
+      flex: 1 0 0%
+      -ms-flex-direction: column
+      flex-direction: column
+      margin-right: 15px
+      margin-left: 15px
+  .card-group
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-flow: row wrap
+    flex-flow: row wrap
+    .card
+      -ms-flex: 1 0 0%
+      flex: 1 0 0%
+      + .card
+        margin-left: 0
+        border-left: 0
+      &:first-child
+        border-top-right-radius: 0
+        border-bottom-right-radius: 0
+        .card-img-top
+          border-top-right-radius: 0
+        .card-img-bottom
+          border-bottom-right-radius: 0
+      &:last-child
+        border-top-left-radius: 0
+        border-bottom-left-radius: 0
+        .card-img-top
+          border-top-left-radius: 0
+        .card-img-bottom
+          border-bottom-left-radius: 0
+      &:not(:first-child):not(:last-child)
+        border-radius: 0
+        .card-img-top, .card-img-bottom
+          border-radius: 0
+
+@media (max-width: 576px)
+  .card-deck .card:first-child
+    margin-top: 0px
+
+
+@media (max-width: 768px)
+  .card-deck .card
+    display: -ms-flexbox
+    display: flex
+    -ms-flex: 0.5 0 45%
+    flex: 0.5 0 45%
+    -ms-flex-direction: column
+    flex-direction: column
+    margin-right: 15px
+    margin-left: 15px
+    margin-top: 15px
+
+
+/*# sourceMappingURL=style.css.map

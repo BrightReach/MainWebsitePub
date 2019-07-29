@@ -13,8 +13,8 @@ try{                                // Enable verbose debug output
         $mail->Host = 'archimedes.krystal.co.uk';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
         $mail->Username = 'admin@brightreachstudio.co.uk';    // SMTP username
-        $mail->Password = 'Kur0*K4z3';                       // SMTP password
-        $mail->Port = 465;  
+        $mail->Password = 'CENSORED';                       // SMTP password
+        $mail->Port = CENSORED;  
 
         $name = $_POST['name1'];
         $email = $_POST['email1'];
